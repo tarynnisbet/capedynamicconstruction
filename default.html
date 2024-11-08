@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cape Dynamic Construction</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+  <!-- Main Page Content -->
+  <div class="construction-page">
+    <div class="logo-container">
+      <img src="logo.png" alt="Cape Dynamic Construction Logo">
+    </div>
+    <div class="content">
+      <h1>WEBSITE UNDER CONSTRUCTION</h1>
+      <p>CAPE DYNAMIC CONSTRUCTION NEVER LEAVES A 'SITE' UNFINISHED OR MESSY, WE KNOW THE IMPORTANCE OF A STRONG FOUNDATION, AND WE’RE ON IT WITH THE WEBSITE.</p>
+      <button class="cta-button" onclick="showOverlay()">FOR NOW, HERE IS A PATCH UP</button>
+    </div>
+  </div>
+
+  <!-- GIF Overlay -->
+  <div id="gifOverlay" class="overlay">
+    <div class="overlay-content">
+      <button class="close-button" onclick="hideOverlay()">✕</button>
+      <img src="placeholder.gif" alt="Under Construction">
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function showOverlay() {
+      const overlay = document.getElementById('gifOverlay');
+      overlay.classList.add('show');
+    }
+
+    function hideOverlay() {
+      const overlay = document.getElementById('gifOverlay');
+      overlay.classList.remove('show');
+    }
+  </script>
+</body>
+</html>
+
+

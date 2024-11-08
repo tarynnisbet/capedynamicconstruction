@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  background-image: url('background.jpg'); /* Update the path to your image */
+  background-size: cover; /* Ensure the image covers the entire screen */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling (optional) */
+  color: #ffc400;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.construction-page {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  position: relative;
+}
+
+/* Logo */
+.logo-container img {
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Main Content */
+.content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color:#ffffff;
+  font-weight: 600;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #ffc400;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color:#ffffff;
+}
+
+/* Overlay */
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  overflow: auto; /* Allow scrolling for smaller devices */
+}
+
+.overlay.show {
+  display: flex; /* Show the overlay when triggered */
+}
+
+.overlay-content {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* Ensure proper scaling */
+  background: rgba(255, 255, 255, 0.1); /* Slight background effect */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-content img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #feb900; /* Matches the brand color */
+  color: #000000;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1010; /* Ensure it's above everything else */
+}
+
+.close-button:hover {
+  background-color: #e0a600;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .overlay-content {
+    width: 90%; /* Expand to fit smaller screens */
+    max-width: none;
+    padding: 15px;
+  }
+
+  .close-button {
+    top: 10px;
+    right: 10px;
+    font-size: 0.8rem; /* Adjust button size */
+    padding: 8px 12px;
+  }
+
+  .content h1 {
+    font-size: 2.5rem; /* Adjust heading size */
+  }
+
+  .content p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  .logo-container img {
+    max-width: 150px; /* Smaller logo for mobile */
+  }
+}
+
+
+
+
+  
+  
+  
